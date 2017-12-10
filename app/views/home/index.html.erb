@@ -84,8 +84,9 @@
 
 <div class='bg'>
   <div class='col-xs-12 col-sm-8 col-sm-offset-2 text-center'>
-    <h1 class='quote_xs visible-xs'><%= get_quote %></h1>
-    <h1 class='quote hidden-xs'><%= get_quote %></h1>
+    <% quote = get_quote %>
+    <h1 class='quote_xs visible-xs'><%= quote %></h1>
+    <h1 class='quote hidden-xs'><%= quote %></h1>
   </div>
   <%= link_to 'https://twitter.com/drewhaines3', target: '_blank' do %>
     <p class='by'>

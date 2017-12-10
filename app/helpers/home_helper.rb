@@ -1,10 +1,26 @@
 module HomeHelper
+  def get_random_quote_number
+    # session[:quote_number] = nil
+    session[:quote_number] ||= (0..QUOTES.size-1).to_a.shuffle
+    session[:quote_number] = (0..QUOTES.size-1).to_a.shuffle if session[:quote_number].empty?
+    session[:quote_number] = session[:quote_number].to_a.shuffle
+    session[:quote_number].pop
+  end
+
+  def get_random_image_number
+    # session[:image_number] = nil
+    session[:image_number] ||= (0..IMAGES.size-1).to_a.shuffle
+    session[:image_number] = (0..IMAGES.size-1).to_a.shuffle if session[:image_number].empty?
+    session[:image_number] = session[:image_number].to_a.shuffle
+    session[:image_number].pop
+  end
+
   def get_quote
-    QUOTES[Random.rand(QUOTES.size)] + "\n"
+    QUOTES[get_random_quote_number] + "\n"
   end
 
   def get_image_url
-    IMAGES[Random.rand(IMAGES.size)]
+    IMAGES[get_random_image_number]
   end
 
   QUOTES = [
@@ -51,7 +67,23 @@ module HomeHelper
     "We are most alive when we're in love.",
     "The only true wisdom is in knowing you know nothing.",
     "If you're not making someone else's life better, you're wasting your time.",
-    "GET \n\nSHIT \n\nDONE"
+    "GET \n\nSHIT \n\nDONE",
+    "If it doesn't challenge you, it won't change you.",
+    "Done is better than perfect.",
+    "Do your BEST. \n\n And God will do the rest.",
+    "God helps those who help themselves.",
+    "You gotta go through hell to get to big things.",
+    "No pain. \n\nNo gain.",
+    "They gunna try to bring you down. Hating is what they do. \n\nBut you gotta keep a smile. Stay up on your move.\n\nLive free, live free, live free, live free.",
+    "Far from a Harvard student. \n\nJust had the balls to do it",
+    "They say more money, more problems. \n\n Don't believe it.",
+    "I learned working with the negatives can make for better pictures.",
+    "Everybody dies but not everybody lives",
+    "If you had one shot, or one opportunity,\n\nTo seize everything you ever wanted, in one moment.\n\nWould you capture it, or just let it slip?",
+    "Nobody asked for life to deal us with these bullshit hands we're dealt.\n\n We gotta take these cards ourselves and flip 'em, don't expect no help.\n\n Now, I could've either just sat on my ass and pissed and moaned.\n\n Or take this situation in which I'm placed in and get up and get my own.",
+    "Started from the bottom, now were here. \n\nStarted from the bottom now my whole team f*ckin' here.",
+    "The chains of habit are too weak to be felt until they are too strong to be broken.",
+    "It's not the smartest or strongest that thrive.\n\n It's those who adapt the quickest."
   ]
 
   IMAGES = [
@@ -95,6 +127,23 @@ module HomeHelper
     "https://static.pexels.com/photos/529621/pexels-photo-529621.jpeg",
     "https://static.pexels.com/photos/417101/pexels-photo-417101.jpeg",
     "https://static.pexels.com/photos/541896/pexels-photo-541896.jpeg",
+    "https://static.pexels.com/photos/694740/pexels-photo-694740.jpeg",
+    "https://static.pexels.com/photos/220326/pexels-photo-220326.jpeg",
+    "https://static.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg",
+    "https://static.pexels.com/photos/365633/pexels-photo-365633.jpeg",
+    "https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+    "https://static.pexels.com/photos/92904/pexels-photo-92904.jpeg",
+    "https://static.pexels.com/photos/703014/pexels-photo-703014.jpeg",
+    "https://static.pexels.com/photos/703010/pexels-photo-703010.jpeg",
+    "https://static.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg",
+    "https://static.pexels.com/photos/247477/pexels-photo-247477.jpeg",
+    "https://static.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg",
+    "https://static.pexels.com/photos/533509/pexels-photo-533509.jpeg",
+    "https://static.pexels.com/photos/269583/pexels-photo-269583.jpeg",
+    "https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+    "https://static.pexels.com/photos/280193/pexels-photo-280193.jpeg",
+    "https://static.pexels.com/photos/351265/pexels-photo-351265.jpeg",
+    "https://static.pexels.com/photos/374777/pexels-photo-374777.jpeg",
 
   ]
 end
