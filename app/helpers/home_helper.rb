@@ -80,7 +80,8 @@ module HomeHelper
     "I learned working with the negatives can make for better pictures.",
     "Everybody dies but not everybody lives",
     "If you had one shot, or one opportunity,\n\nTo seize everything you ever wanted, in one moment.\n\nWould you capture it, or just let it slip?",
-    "Nobody asked for life to deal us with these bullshit hands we're dealt.\n\n We gotta take these cards ourselves and flip 'em, don't expect no help.\n\n Now, I could've either just sat on my ass and pissed and moaned.\n\n Or take this situation in which I'm placed in and get up and get my own.",
+    "Nobody asked for life to deal us with these bullshit hands we're dealt.\n\n We gotta take these cards ourselves and flip 'em, don't expect no help.",
+    "I could've either just sat on my ass and pissed and moaned.\n\n Or take this situation in which I'm placed in and get up and get my own.",
     "Started from the bottom, now were here. \n\nStarted from the bottom now my whole team f*ckin' here.",
     "The chains of habit are too weak to be felt until they are too strong to be broken.",
     "It's not the smartest or strongest that thrive.\n\n It's those who adapt the quickest."
