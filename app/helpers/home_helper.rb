@@ -30,7 +30,7 @@ module HomeHelper
     "A quitter never wins and a winner never quits.",
     "The man who says 'he can' and the man who says 'he can't' are usually both correct.",
     "When you succeed you party, \nbut when you fail you ponder. \n\nTherefore all great things come from failure.",
-    "I've got 6 jobs, \n\nI DON'T GET TIRED.",
+    "I've got 6 jobs. \n\nI DON'T GET TIRED.",
     "Tell me what you know about 40 days, 40 nights. \n\nNo lights, ALL FOR THIS!",
     "Work hard, play hard! \n\nWork, work, work, work!",
     "Motivation is what gets you started. \n\nHabit is what keeps you going.",
@@ -39,14 +39,14 @@ module HomeHelper
     "Entrepreneurs average 3.8 failures before final success. What sets the successful ones apart is their amazing persistence.",
     "All our dreams can come true if we have the courage to pursue them.",
     "The best revenge is massive success.",
-    "I have not failed. I've just found 10,000 ways that won't work.",
+    "I have not failed. \n\nI've just found 10,000 ways that won't work.",
     "You have to learn the rules of the game. And then you have to play better than anyone else.",
     "If the only tool you have is a hammer, you tend to see every problem as a nail.",
     "The distance between insanity and genius is measured only by success.",
     "To succeed in life, you need two things: ignorance and confidence.",
     "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.",
     "Prior planning prevents piss poor performance.",
-    "they don't talk about the kid that came from nothin'. Who stuck to what he believed in and turned himself into something great.",
+    "They don't talk about the kid that came from nothin'. Who stuck to what he believed in and turned himself into something great.",
     "The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.",
     "We are most alive when we're in love.",
     "The only true wisdom is in knowing you know nothing.",
@@ -95,6 +95,6 @@ module HomeHelper
     "https://static.pexels.com/photos/529621/pexels-photo-529621.jpeg",
     "https://static.pexels.com/photos/417101/pexels-photo-417101.jpeg",
     "https://static.pexels.com/photos/541896/pexels-photo-541896.jpeg",
-    
+
   ]
 end
