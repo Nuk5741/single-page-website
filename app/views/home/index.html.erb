@@ -32,6 +32,25 @@
     border-radius: 8px;
     line-height: 1.5em;
     white-space: pre-wrap;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+  }
+
+  .quote_xs {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    margin-top: 10%;
+    background-color: rgba(0,0,0,0.3);
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    line-height: 1.5em;
+    white-space: pre-wrap;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
   }
 
   .drew {
@@ -65,7 +84,8 @@
 
 <div class='bg'>
   <div class='col-xs-12 col-sm-8 col-sm-offset-2 text-center'>
-    <h1 class='quote'><%= get_quote %></h1>
+    <h1 class='quote_xs visible-xs'><%= get_quote %></h1>
+    <h1 class='quote hidden-xs'><%= get_quote %></h1>
   </div>
   <%= link_to 'https://twitter.com/drewhaines3', target: '_blank' do %>
     <p class='by'>
