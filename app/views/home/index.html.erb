@@ -1,101 +1,25 @@
-<style>
-  body, html {
-      height: 100%;
-      margin: 0px;
-      font-family: 'Open Sans', sans-serif;
-  }
 
-  .bg {
-      /* The image used */
-      background-image: url("<%= get_image_url %>");
-
-      /* Full height */
-      height: 100%;
-
-      opacity: .7;
-
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
-  .quote {
-    color: white;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    margin-top: 10%;
-    background-color: rgba(0,0,0,0.3);
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    line-height: 1.5em;
-    white-space: pre-wrap;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-  }
-
-  .quote_xs {
-    font-size: 24px;
-    color: white;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    margin-top: 10%;
-    background-color: rgba(0,0,0,0.3);
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    line-height: 1.5em;
-    white-space: pre-wrap;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-  }
-
-  .drew {
-    width: 30px;
-    margin-right: 5px;
-  }
-
-  .by {
-    background-color: #4AB3F4;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0px;
-    padding:  10px 20px;
-    border: 1px solid transparent;
-    border-top-left-radius: 10px;
-  }
-
-  .by:hover {
-    background-color: #1DA1F2;
-  }
-
-  .by_text {
-    font-weight: 800;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-family: 'Dosis', sans-serif;
-  }
-</style>
 
 <div class='bg'>
   <div class='col-xs-12 col-sm-8 col-sm-offset-2 text-center'>
-    <% quote = get_quote %>
-    <h1 class='quote_xs visible-xs'><%= quote %></h1>
-    <h1 class='quote hidden-xs'><%= quote %></h1>
+    <%= image_tag 'echologo.png', class: 'img-responsive' %>
   </div>
-  <%= link_to 'https://twitter.com/drewhaines3', target: '_blank' do %>
-    <p class='by'>
-      <span>
-        <%= image_tag 'drew.jpg', class: 'img-circle drew' %>
-      </span>
-      <span class='by_text'>
-        by drewhaines3
-      </span>
-    </p>
-  <% end %>
+  <div class='row'>
+    <div class='col-xs-4 text-center'>
+      <%= link_to 'https://www.youtube.com/channel/UC-jlNpLWo_zoVe_yZ3fZDlg', target: '_blank' do %>
+        <i class="fab fa-youtube fa-5x white"></i>
+      <% end %>
+    </div>
+    <div class='col-xs-4 text-center'>
+      <%= link_to 'https://www.instagram.com/echoverb/', target: '_blank' do %>
+        <i class="fab fa-instagram fa-5x white"></i>
+      <% end %>
+    </div>
+    <div class='col-xs-4 text-center'>
+      <%= link_to 'https://soundcloud.com/user-890617984-971111274', target: '_blank' do %>
+        <i class="fab fa-soundcloud fa-5x white"></i>
+      <% end %>
+    </div>
+  </div>
+
 </div>
