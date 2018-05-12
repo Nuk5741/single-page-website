@@ -40,7 +40,8 @@
  }
 
  .bottom-container {
-   position: fixed;
+   position: absolute;
+   //top: 40%;
    bottom: 30%;
    width: 100%;
    left: 0px;
