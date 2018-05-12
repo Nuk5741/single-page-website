@@ -34,15 +34,26 @@
      background-repeat: no-repeat;
      background-size: cover;
  }
-
+/*
  .white {
    color: white;
  }
-
+*/
  .bottom-container {
    position: absolute;
    //top: 40%;
    bottom: 30%;
    width: 100%;
    left: 0px;
+ }
+
+i{
+  color: white;
+  transition: all .2s ease-in-out;
+  
+}
+
+ i:hover {
+   transition: all .2s ease-in-out;
+   transform: scale(1.5);
  }
