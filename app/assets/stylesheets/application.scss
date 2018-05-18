@@ -57,7 +57,7 @@ i{
    transition: all .2s ease-in-out;
    transform: scale(1.5);
  }
-
+/*
 @media screen and (max-width: 1250px){
    .scimbedmobile{
     //text-align: center;
@@ -69,13 +69,26 @@ i{
     }
 
  }
+*/
+.hidemobile{
+
+  visibility: hidden;
+}
 
  .scimbed{
-  //text-align: center;
-  /*position: absolute;
-  top: auto;
-  left: 170px;
-  bottom: 300px; */
   display: block;
-  visibility: hidden;
+  position: absolute;
+  width: 75%;
+  height: 15%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 45%;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  .scimbed{
+   visibility: hidden;
+ }
 }
